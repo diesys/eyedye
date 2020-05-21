@@ -1,0 +1,65 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Game.gd" type="Script" id=1]
+[ext_resource path="res://interface/fonts/montserrat_eb_128.tres" type="DynamicFont" id=2]
+[ext_resource path="res://interface/fonts/montserrat_eb_64.tres" type="DynamicFont" id=3]
+[ext_resource path="res://assets/bg.png" type="Texture" id=4]
+
+[sub_resource type="PhysicsMaterial" id=1]
+
+[node name="Game" type="Node"]
+script = ExtResource( 1 )
+
+[node name="bg" type="StaticBody2D" parent="."]
+collision_layer = 0
+collision_mask = 0
+physics_material_override = SubResource( 1 )
+
+[node name="bgimg" type="Sprite" parent="bg"]
+position = Vector2( -291.965, -156.616 )
+scale = Vector2( 1234.25, 979.2 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="animation" type="Tween" parent="bg"]
+
+[node name="timer_hue" type="Timer" parent="bg"]
+wait_time = 10.0
+autostart = true
+
+[node name="Container" type="CenterContainer" parent="."]
+modulate = Color( 1, 0.886275, 0.886275, 1 )
+light_mask = 7
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Container"]
+light_mask = 0
+margin_left = 82.0
+margin_top = 139.0
+margin_right = 518.0
+margin_bottom = 461.0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+
+[node name="Points" type="Label" parent="Container/VBoxContainer"]
+light_mask = 0
+margin_left = 93.0
+margin_right = 342.0
+margin_bottom = 157.0
+size_flags_horizontal = 4
+custom_fonts/font = ExtResource( 2 )
+text = "999"
+align = 1
+
+[node name="Label" type="Label" parent="Container/VBoxContainer"]
+margin_top = 161.0
+margin_right = 436.0
+margin_bottom = 322.0
+custom_fonts/font = ExtResource( 3 )
+text = "Far from
+ background"
+align = 1
