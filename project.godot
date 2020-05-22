@@ -17,7 +17,6 @@ _global_script_class_icons={
 
 config/name="Godot and Android"
 run/main_scene="res://Game.tscn"
-boot_splash/bg_color=Color( 0, 0, 0, 1 )
 config/icon="res://assets/icon.png"
 config/macos_native_icon="res://assets/icon.png"
 config/windows_native_icon="res://assets/icon.png"
@@ -36,4 +35,3 @@ pointing/emulate_touch_from_mouse=true
 [rendering]
 
 vram_compression/import_etc=true
-environment/default_clear_color=Color( 0.298039, 0.831373, 0.858824, 1 )
