@@ -15,8 +15,8 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Godot and Android"
-run/main_scene="res://Game.tscn"
+config/name="eyedye"
+run/main_scene="res://scenes/Prototype_02/Prototype_02.tscn"
 config/icon="res://assets/icon.png"
 config/macos_native_icon="res://assets/icon.png"
 config/windows_native_icon="res://assets/icon.png"
@@ -24,6 +24,9 @@ config/windows_native_icon="res://assets/icon.png"
 [display]
 
 window/size/width=600
+window/size/height=760
+window/size/test_width=450
+window/size/test_height=570
 window/handheld/orientation="portrait"
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
